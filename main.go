@@ -110,7 +110,6 @@ func main() {
 		var selectedPersonCount int
 
 		if len(availableWagons) > 0 {
-			//aynı vagonlar için
 			if data.DifferentWagons == false {
 				found := false
 				for _, vagon := range availableWagons {
@@ -128,7 +127,6 @@ func main() {
 				}
 
 				if !found {
-					// Uygun vagon bulunamadı, rezervasyon yapılamaz
 					c.JSON(200, gin.H{
 						"reservationAvailable": false,
 						"availableWagons":      []string{},
@@ -142,7 +140,6 @@ func main() {
 				})
 
 			} else if data.DifferentWagons == true {
-				//farklı vagonlar için
 				p := data.PassengerCount / len(availableWagons)
 				remain := data.PassengerCount % len(availableWagons)
 				for i, vagon := range availableWagons {
@@ -169,5 +166,5 @@ func main() {
 
 		}
 	})
-	r.Run() // default olarak ":8080" üzerinde çalışır
+	r.Run()
 }
