@@ -57,7 +57,7 @@ type Data struct {
 func main() {
 	r := gin.Default()
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"*"}, // Vite React uygulaması portu
+		AllowOrigins:     []string{"https://train-reservation-swart.vercel.app"}, // Vite React uygulaması portu
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
