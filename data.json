@@ -1,0 +1,33 @@
+[
+  {
+    "Ad": "Başkent Ekspres",
+    "Vagonlar": [
+      { "Ad": "Vagon 1", "Kapasite": 100, "Yolcu": 70 },
+      { "Ad": "Vagon 2", "Kapasite": 70, "Yolcu": 34 },
+      { "Ad": "Vagon 3", "Kapasite": 60, "Yolcu": 20 }
+    ]
+  },
+  {
+    "Ad": "Göller Ekspres",
+    "Vagonlar": [
+      { "Ad": "Vagon 1", "Kapasite": 120, "Yolcu": 45 },
+      { "Ad": "Vagon 2", "Kapasite": 100, "Yolcu": 50 },
+      { "Ad": "Vagon 3", "Kapasite": 50, "Yolcu": 10 }
+    ]
+  },
+  {
+    "Ad": "Akdeniz Ekspres",
+    "Vagonlar": [
+      { "Ad": "Vagon 1", "Kapasite": 80, "Yolcu": 70 },
+      { "Ad": "Vagon 2", "Kapasite": 40, "Yolcu": 20 }
+    ]
+  },
+  {
+    "Ad": "Toroslar Ekspres",
+    "Vagonlar": [
+      { "Ad": "Vagon 1", "Kapasite": 120, "Yolcu": 45 },
+      { "Ad": "Vagon 2", "Kapasite": 50, "Yolcu": 12 },
+      { "Ad": "Vagon 3", "Kapasite": 80, "Yolcu": 40 }
+    ]
+  }
+]
