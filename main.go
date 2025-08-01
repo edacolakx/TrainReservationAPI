@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"time"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -165,6 +166,12 @@ func main() {
 			})
 
 		}
+	})
+	r.GET("/health", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"status":    "OK",
+			"timestamp": time.Now(),
+		})
 	})
 	r.Run()
 }
