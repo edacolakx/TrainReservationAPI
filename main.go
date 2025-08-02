@@ -173,5 +173,9 @@ func main() {
 			"timestamp": time.Now(),
 		})
 	})
-	r.Run()
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	r.Run(":" + port)
 }
